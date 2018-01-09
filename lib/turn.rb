@@ -9,10 +9,10 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  if valid_move? != true
+  if valid_move?(board, index) != true
     turn
-  else move  
-  end  
+  else move
+  end
 end
 
 def input_to_index(user_input)
