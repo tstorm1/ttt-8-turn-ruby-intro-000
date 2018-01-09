@@ -10,7 +10,7 @@ end
 def turn(board, index, default_player = "X")
   puts "Please enter 1-9:"
   if valid_move?(board, index) != true
-    turn
+    turn(board, index, default_player = "X")
   else move(board, index, default_player = "X")
   end
 end
