@@ -7,11 +7,11 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def turn(board)
+def turn(board, index, default_player = "X")
   puts "Please enter 1-9:"
   if valid_move?(board, index) != true
     turn
-  else move
+  else move(board, index, default_player = "X")
   end
 end
 
